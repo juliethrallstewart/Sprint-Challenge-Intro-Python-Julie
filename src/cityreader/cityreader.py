@@ -29,6 +29,7 @@ class City:
 cities = []
 
 def cityreader(cities=[]):
+  cities = []
   with open('cities.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
