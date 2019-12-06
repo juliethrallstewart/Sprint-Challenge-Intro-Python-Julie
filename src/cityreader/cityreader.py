@@ -24,7 +24,7 @@ class City:
             self.lon = lng
 
       def __str__(self):
-            return f"{self.name} {self.lat} {self.lon}"
+            return f"{self.name}, {self.lat}, {self.lon}"
 
 cities = []
 
@@ -39,7 +39,7 @@ def cityreader(cities=[]):
           else:
              cities.append(City(row[0], row[3], row[4]))
              line_count+=1
-          
+  # Print the list of cities (name, lat, lon), 1 record per line.        
     for c in cities:
           print(c)
     
@@ -47,10 +47,6 @@ def cityreader(cities=[]):
 
 print(cityreader())
 
-
-# Print the list of cities (name, lat, lon), 1 record per line.
-# for c in cities:
-#     print(c)
 
 # STRETCH GOAL!
 #
