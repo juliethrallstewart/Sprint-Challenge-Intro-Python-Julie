@@ -37,13 +37,17 @@ def cityreader(cities=[]):
                 line_count+=1
                 pass
           else:
-             cities.append(City(row[0], row[3], row[4]))
+             cities.append(City(row[0], float(row[3]), float(row[4])))
              line_count+=1
   # Print the list of cities (name, lat, lon), 1 record per line.        
     for c in cities:
           print(c)
     
     print(f'Processed {line_count} lines.')
+
+    print(len(cities), "cities length")
+
+    return cities
 
 print(cityreader())
 
@@ -79,12 +83,12 @@ print(cityreader())
 
 # TODO Get latitude and longitude values from the user
 
-def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
+# def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   # within will hold the cities that fall within the specified region
-  within = []
+  # within = []
 
   # TODO Ensure that the lat and lon valuse are all floats
   # Go through each city and check to see if it falls within 
   # the specified coordinates.
 
-  return within
+  # return within
