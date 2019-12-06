@@ -26,7 +26,7 @@ class City:
       def __str__(self):
             return f"{self.name}, {self.lat}, {self.lon}"
 
-cities = []
+
 
 def cityreader(cities=[]):
   cities = []
